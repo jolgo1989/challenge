@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #817c7c;
+  /* --size-car: 90%; */
+}
+
+/* SECCION BODY */
+.body {
+  display: grid;
+  grid-template-areas:
+    "header      header       header"
+    "main        main         main"
+    "footer      footer       footer";
+
+  background-color: #333;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+/* SECCION HEADER */
+.header {
+  grid-area: header;
+  background-color: #db6b2a;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/* LOGO */
+.header__logo {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* NAV BAR */
+.header__Nav {
+  /* justify-content: space-around; */
+  list-style: none;
+  width: 50%;
+  margin: auto 0;
+}
+
+.headerNav__ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.headerNav__link {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: calc(0.25rem + 1vw);
+}
+
+.headerNav__link--efect {
+  font-weight: bolder;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.headerNav__link--efect::after {
+  content: "";
+  position: absolute;
+  background-color: var(--black);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition-duration: 0.5s;
+}
+
+.headerNav__link--efect:hover {
+  color: var(--white);
+}
+
+.headerNav__link--efect:hover:after {
+  width: 100%;
+}
+
+/* SECCION MAIN */
+.main {
+  grid-area: main;
+  background-color: #333;
+  display: flex;
+}
+
+.main__galeria {
+  display: grid;
+  grid-template-areas:
+    "carBlack    carBlack    carRed      carTxt"
+    "carBlack    carBlack    carBlue     carTxt"
+    "cars        personCar   streetCar   carTxt";
+
+  width: 40%;
+  gap: 10px;
+  margin: 20px;
+}
+
+.main__carBlack {
+  grid-area: carRed;
+}
+
+.main__carRed {
+  grid-area: carBlue;
+}
+
+.main__carBlue {
+  grid-area: carBlack;
+}
+
+.main__cars {
+  grid-area: cars;
+}
+
+.main__personCar {
+  grid-area: personCar;
+}
+
+.main__streetCar {
+  grid-area: streetCar;
+}
+
+.main__titulo {
+  font-size: calc(1rem + 3vw);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  color: #b1acac;
+}
+
+.main__carTxt {
+  font-size: calc(0.25rem + 1vw);
+}
+
+.main__txt {
+  grid-area: carTxt;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  font-weight: 700;
+  color: #b1acac;
+  width: 60%;
+  margin: 20px;
+}
+
+.main__car--efectos {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform: scale(0.5 0.05);
+}
+
+.main__car--efectos:hover {
+  transform: scale(1.04);
+}
+
+/* SECCION FOOTER */
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db6b2a;
+  height: 70px;
+}
+
+.footer__social-media {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__icon {
+  font-size: calc(0.5rem + 2vw);
+  cursor: pointer;
+}
+
+.footer__icon--efect {
+  transform: translateY(0px);
+  transition-duration: 0.5s;
+}
+
+.footer__icon--efect:hover {
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
+
+/* Media query */
+/* Tablets en horizonal y escritorios normales */
+
+/* Móviles en horizontal o tablets en vertical */
+@media (max-width: 767px) {
+  .header {
+    display: grid;
+    grid-template-areas:
+      "logo logo "
+      "nav nav ";
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header__Nav {
+    grid-area: nav;
+  }
+  /* SECCION MAIN */
+  .main__galeria {
+    display: grid;
+    grid-template-areas:
+      "img img1"
+      "img2 img3"
+      "img4 img5";
+    /* justify-content: center; */
+  }
+
+  .main__carBlack {
+    grid-area: img;
+  }
+  .main__carRed {
+    grid-area: img1;
+  }
+
+  .main__carBlue {
+    grid-area: img2;
+  }
+  .main__cars {
+    grid-area: img3;
+  }
+
+  .main__personCar {
+    grid-area: img4;
+  }
+
+  .main__streetCar {
+    grid-area: img5;
+  }
+}

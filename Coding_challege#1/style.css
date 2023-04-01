@@ -1,0 +1,245 @@
+/* General layout */
+body {
+  font-family: SemanaSans-Medium;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* header layou */
+
+header,
+footer {
+  background: #a01111;
+  color: #0e0d0d;
+}
+
+.logo {
+  font-size: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #02050c;
+}
+
+header ul.navigation {
+  float: right;
+  margin-top: 40px;
+}
+
+header ul.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header .inicio,
+.proyectos,
+.contacto {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 3px;
+  transition: 0.1s all linear;
+  font-family: SemanaSans-Medium;
+}
+
+/* Metodo para que resalte una linea en el momento de seleccionar in item */
+header .proyectos:hover,
+.inicio:hover,
+.contacto:hover {
+  border-bottom: 3px solid rgb(243, 238, 238);
+}
+
+/* section layout */
+
+section {
+  color: #02050c;
+}
+
+section h1,
+h2 {
+  font-size: 30px;
+  /* text-align: center; */
+  margin-left: 160px;
+  margin-right: 10px;
+  width: 800px;
+  margin-bottom: 2px;
+  font-family: "SemanaSerif-ExtraBold";
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: "SemanaSerif-Regular";
+}
+
+.datetime {
+  color: #7a7a7a;
+  margin-left: 160px;
+  margin-right: 10px;
+  font-family: "SemanaSans-Regular";
+}
+
+section hr {
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+img {
+  width: 850px;
+  height: 500px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+iframe {
+  margin-left: 180px;
+  margin-right: 180px;
+  width: 850px;
+  height: 500px;
+}
+.icons {
+  position: absolute;
+  top: 268px;
+  left: 180px;
+  font-size: 30px;
+  position: fixed;
+  /* Metodo para colocar los iconos de formar vertical */
+  block-size: auto;
+  writing-mode: vertical-lr;
+}
+
+section figcaption {
+  margin-left: 120px;
+  margin-right: 110px;
+  color: #999999;
+  font-size: smaller;
+  margin-top: 10px;
+  font-family: "SemanaSans-Regular";
+}
+section p {
+  text-align: justify;
+  line-height: 1.5;
+  display: block;
+  margin-left: 270px;
+  margin-right: 270px;
+  font-family: "SemanaSerif-Regular";
+}
+
+/* footer layout */
+footer {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 55px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.letsgo,
+.planet,
+.space,
+.outerspace,
+.alien {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.textname,
+.email,
+.textBox,
+.button {
+  display: block;
+  margin-top: 30px;
+}
+
+.textname,
+.email {
+  width: 500px;
+  height: 30px;
+  margin-left: 700px;
+  margin-right: 100px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  margin-left: 700px;
+  margin-right: 100px;
+}
+
+.form {
+  margin-left: 700px;
+  margin-right: 10px;
+  margin-top: 1px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.formtwo {
+  font-size: 30px;
+  margin-top: 1px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.textBox {
+  width: 500px;
+  height: 210px;
+  margin-left: 700px;
+  margin-right: 100px;
+}
+
+.formulario {
+  position: relative;
+}
+
+.datos {
+  margin-top: 1px;
+  margin-bottom: 5px;
+  width: 600px;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 20px;
+  position: absolute;
+}
+
+.adress {
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.facebook,
+.twitter,
+.google,
+.instagrams {
+  margin-top: 20px;
+  font-size: 30px;
+  margin-left: 1px;
+}
+
+.texticons {
+  margin-top: 60px;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.ptext {
+  margin-bottom: 3px;
+  font-weight: bold;
+}

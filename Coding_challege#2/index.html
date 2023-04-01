@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/83af84bc01.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body id="home">
+    <header>
+      <!-- Separator -->
+      <div class="nav-bar__separator"></div>
+
+      <!--Container nav -->
+      <div class="Container-nav">
+        <!--Nav Logo -->
+        <p class="nav_logo">LOGO</p>
+        <!-- Nav bar -->
+        <nav class="nav-bar">
+          <ul class="nav-bar__ul">
+            <li class="nav-bar__item">
+              <a href="#home" class="nav-bar_home">Home</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="#productos" class="nav-bar_productos">Productos</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="#proyectos" class="nav-bar_proyectos">Proyectos</a>
+            </li>
+            <li class="nav-bar__item">
+              <a href="#contactenos" class="nav-bar_contacto">Contactenos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- nav search -->
+        <form class="nav-search">
+          <input
+            class="nav-search__input"
+            type="search"
+            placeholder="Search Something..."
+          />
+          <i class="nav-search__magnifying fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <!--Social icons  -->
+        <ul class="soicial-icons">
+          <li class="soicial-icons__item">
+            <a href="#">
+              <i class="soicial-icons__icon fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="soicial-icons__item">
+            <a href="#">
+              <i class="soicial-icons__icon fa-brands fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="soicial-icons__item">
+            <a href="#">
+              <i class="soicial-icons__icon fa-brands fa-instagram-square"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Home container -->
+      <div class="home-container">
+        <img
+          class="home-container__imagen"
+          src="/assets/imagenes/traveler.webp"
+          alt="Person with suitcase"
+        />
+        <h1 class="home-container__pagrapha">
+          The trip of your dreams <br />is possible
+        </h1>
+      </div>
+
+      <!--Productos container  -->
+      <div class="productos-container" id="productos">
+        <section class="productos-container__section">
+          <h2 class="productos-container__h2">Productos</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            sequi consequuntur voluptatem soluta error reiciendis unde! Nisi
+            corporis omnis rerum alias a sunt, quod ad quam aliquid dignissimos
+            quibusdam id.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            doloribus hic dolor atque eos! Asperiores nihil numquam in, id
+            reprehenderit, voluptatem repellat natus enim explicabo voluptates
+            libero culpa quibusdam nostrum.
+          </p>
+        </section>
+
+        <img
+          class="productos-container__img"
+          src="/assets/imagenes/volkswagen.webp"
+          alt="volkswagen"
+        />
+      </div>
+
+      <!-- proyecto container -->
+      <div class="proyectos-container" id="proyectos">
+        <h2 class="proyectos-container__h2">Proyectos</h2>
+        <div class="proyectos-container__block">
+          <section class="proyectos-container__section">
+            <h3 class="proyectos-container__h3">Destination</h3>
+            <p class="proyectos-container_p">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati veniam corporis harum quia mollitia reprehenderit
+              asperiores voluptate quod! Non ducimus nostrum molestias pariatur
+              facilis numquam architecto id consectetur reiciendis adipisci.
+            </p>
+          </section>
+
+          <section class="proyectos-container__section">
+            <h3 class="proyectos-container__h3">Type of trip</h3>
+            <p class="proyectos-container_p">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati veniam corporis harum quia mollitia reprehenderit
+              asperiores voluptate quod! Non ducimus nostrum molestias pariatur
+              facilis numquam architecto id consectetur reiciendis adipisci.
+            </p>
+          </section>
+
+          <section class="proyectos-container__section">
+            <h3 class="proyectos-container__h3">Traveling plans</h3>
+            <p class="proyectos-container_p">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati veniam corporis harum quia mollitia reprehenderit
+              asperiores voluptate quod! Non ducimus nostrum molestias pariatur
+              facilis numquam architecto id consectetur reiciendis adipisci.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <!-- Container contactenos -->
+      <div class="container-form">
+        <h2 class="container-form__h2" id="contactenos">Contactenos</h2>
+        <form class="container-form__form">
+          <div class="container-form__text-email">
+            <input
+              class="container-form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name..."
+            />
+            <input
+              class="container-form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email..."
+            />
+          </div>
+
+          <textarea
+            class="container-form__textarea"
+            name="message"
+            id="mesage"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+
+          <input class="button" type="submit" name="button" id="button" />
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <small class="footer__small">
+        Copyright &#169; 2022 JOLGO. All right reserved .
+      </small>
+    </footer>
+  </body>
+</html>
